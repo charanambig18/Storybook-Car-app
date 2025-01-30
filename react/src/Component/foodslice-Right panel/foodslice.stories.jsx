@@ -1,9 +1,9 @@
 import { fn } from "@storybook/test";
-import Task from "./Task";
+import foodslice from "./foodslice";
 
 export default {
-  component: Task,
-  title: "Componant/Task",
+  component: foodslice,
+  title: "Componant/foodslice",
   tags: ["autodocs"],
   excludeStories: /.*Data$/,
   args: {

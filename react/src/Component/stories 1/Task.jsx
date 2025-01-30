@@ -3,10 +3,10 @@ import "./Task.css";
 import heart from "./images/heart.jpg";
 import orange from "./images/Like-orange.png";
 import location from "./images/location.png";
-import whatsapp from "./images/whatsapp.png"
-import share from "./images/share.png"
-import thunderboult from "./images/thunderbolt.png"
-import menu from "./images/menu.png"
+import whatsapp from "./images/whatsapp.png";
+import share from "./images/share.png";
+import thunderboult from "./images/thunderbolt.png";
+import menu from "./images/menu.png";
 
 const carImages = [
   "https://images10.gaadi.com/usedcar_image/4320910/original/10e495689e38c63ed57b8bc8a0a08fee.JPG?imwidth=640",
@@ -65,61 +65,61 @@ export default function Task() {
       {/* Right Side (Static Car Details) */}
       <div className="inner2">
         <div className="top">
-        <div className="inner2-1">
-          <div className="in1">
-            <h2>2023 Maruti Alto K10 VXI Plus</h2>
-            <button>CERTIFIED</button>
+          <div className="inner2-1">
+            <div className="in1">
+              <h2>2023 Maruti Alto K10 VXI Plus</h2>
+              <button>CERTIFIED</button>
 
-            <img
-              src={isFavorited ? orange : heart}
-              alt="Favorite"
-              className={`heart-icon ${isFavorited ? "favorited" : ""}`}
-              onClick={toggleFavorite}
-            />
-          </div>
-
-          <div className="in2">
-            <span>5,846 kms</span>
-            <ul>
-              <li>Petrol</li>
-              <li>Manual</li>
-              <li>1st Owner</li>
-            </ul>
-          </div>
-
-          <div className="in3">
-            <h2>$5.21 Lakh</h2>
-            <a href="#">EMI starts @ $12,932/mo</a>
-          </div>
-          <div className="in4">
-            <div className="in4-1">
-              <img src={location} alt="Location" />
-              <p>Yelahanka, Bangalore</p>
-              <input type="checkbox" /> Compare
+              <img
+                src={isFavorited ? orange : heart}
+                alt="Favorite"
+                className={`heart-icon ${isFavorited ? "favorited" : ""}`}
+                onClick={toggleFavorite}
+              />
             </div>
-            <button>View Seller Details</button>
+
+            <div className="in2">
+              <span>5,846 kms</span>
+              <ul>
+                <li>Petrol</li>
+                <li>Manual</li>
+                <li>1st Owner</li>
+              </ul>
+            </div>
+
+            <div className="in3">
+              <h2>$5.21 Lakh</h2>
+              <a href="#">EMI starts @ $12,932/mo</a>
+            </div>
+            <div className="in4">
+              <div className="in4-1">
+                <img src={location} alt="Location" />
+                <p>Yelahanka, Bangalore</p>
+                <input type="checkbox" /> Compare
+              </div>
+              <button>View Seller Details</button>
+            </div>
           </div>
-        </div>
-        <div className="inner2-2">
-          <div className="thunder-icon">
-            <img src={thunderboult} alt="" />
+          <div className="inner2-2">
+            <div className="thunder-icon">
+              <img src={thunderboult} alt="" />
+            </div>
+            <h3>Trending Car!</h3>
+            <p>High chances of sale in next 6 days</p>
           </div>
-          <h3>Trending Car!</h3>
-          <p>High chances of sale in next 6 days</p>
-        </div>
         </div>
         <div className="bottom">
           <div className="app-icon">
             <img src={whatsapp} alt="" />
             <div className="app-des">
-            <a href="">Chat with Seller</a>
+              <a href="">Chat with Seller</a>
             </div>
           </div>
 
           <div className="app-icon">
             <img src={share} alt="" />
             <div className="app-des">
-            <a href="">Share</a>
+              <a href="">Share</a>
             </div>
           </div>
         </div>

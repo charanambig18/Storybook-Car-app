@@ -44,13 +44,12 @@ h3 {
 .Car-menu-img img {
   width: 14px;
   padding-right: 5px;
-
 }
 .Car-menu-img p {
   margin: 0px 0px 0px 0px;
   font-size: 11px;
   font-weight: bold;
-
+  color: rgba(0, 0, 0, 0.885);
 }
 
 /* Left Side (Car Image & Slide Buttons) */
@@ -82,7 +81,7 @@ h3 {
   transform: translateY(-50%);
   font-size: 24px;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.558);
   color: white;
   border: none;
   padding: 10px;
@@ -99,7 +98,7 @@ h3 {
 }
 
 /* Right Side (Car Details) */
-.top{
+.top {
   flex: 0.5;
   margin: 20px;
   box-shadow: 2px 2px 2px 2px #e2e1e1;
@@ -228,31 +227,28 @@ h3 {
   align-items: center;
   padding: 10px;
 }
-.inner2-2 img{
+.inner2-2 img {
   width: 27px;
   height: 20px;
 }
-.bottom{
+.bottom {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
 }
-.bottom .app-icon img{
+.bottom .app-icon img {
   width: 29px;
   height: 22px;
   padding: 0px 8px 0px 0px;
 }
-.bottom .app-icon{
+.bottom .app-icon {
   display: flex;
   align-items: center;
-  
 }
-.bottom .app-icon a{
+.bottom .app-icon a {
   color: rgba(0, 0, 0, 0.852);
   font-weight: bold;
 }
-
 
 /* 🔹 Responsive Design */
 @media (max-width: 1024px) {
