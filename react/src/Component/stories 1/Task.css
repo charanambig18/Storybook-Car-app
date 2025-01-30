@@ -71,7 +71,7 @@ h3 {
 }
 
 /* Right Side (Car Details) */
-.inner2 {
+.top{
   flex: 0.5;
   margin: 20px;
   box-shadow: 2px 2px 2px 2px #e2e1e1;
@@ -200,6 +200,27 @@ h3 {
   align-items: center;
   padding: 10px;
 }
+.bottom{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.bottom .app-icon img{
+  width: 29px;
+  height: 22px;
+  padding: 0px 8px 0px 0px;
+}
+.bottom .app-icon{
+  display: flex;
+  align-items: center;
+  
+}
+.bottom .app-icon a{
+  color: rgba(0, 0, 0, 0.852);
+  font-weight: bold;
+}
+
 
 /* 🔹 Responsive Design */
 @media (max-width: 1024px) {
