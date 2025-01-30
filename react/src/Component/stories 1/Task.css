@@ -25,6 +25,34 @@ h3 {
   align-items: center;
 }
 
+.bottom-icon {
+  position: absolute;
+  margin: 327px 650px 0px 10px;
+}
+
+.Car-menu-img {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin: 325px 0px 0px 520px;
+  background-color: #fff;
+  padding: 8px 15px 6px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.326);
+}
+.Car-menu-img img {
+  width: 14px;
+  padding-right: 5px;
+
+}
+.Car-menu-img p {
+  margin: 0px 0px 0px 0px;
+  font-size: 11px;
+  font-weight: bold;
+
+}
+
 /* Left Side (Car Image & Slide Buttons) */
 .inner1 {
   flex: 1;
@@ -199,6 +227,10 @@ h3 {
   justify-content: center;
   align-items: center;
   padding: 10px;
+}
+.inner2-2 img{
+  width: 27px;
+  height: 20px;
 }
 .bottom{
   display: flex;

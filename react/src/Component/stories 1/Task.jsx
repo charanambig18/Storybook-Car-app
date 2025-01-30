@@ -5,6 +5,8 @@ import orange from "./images/Like-orange.png";
 import location from "./images/location.png";
 import whatsapp from "./images/whatsapp.png"
 import share from "./images/share.png"
+import thunderboult from "./images/thunderbolt.png"
+import menu from "./images/menu.png"
 
 const carImages = [
   "https://images10.gaadi.com/usedcar_image/4320910/original/10e495689e38c63ed57b8bc8a0a08fee.JPG?imwidth=640",
@@ -43,6 +45,18 @@ export default function Task() {
           &#10094;
         </button>
         <img src={carImages[currentIndex]} alt="Car" className="car-image" />
+
+        <span className="bottom-icon">
+          <img
+            src="https://stimg.cardekho.com/usedcar/images/logos/Spinny_LogoDark1.svg"
+            alt=""
+          />
+        </span>
+        <div className="Car-menu-img">
+          <img src={menu} alt="" />
+          <p> 40 PHOTOS</p>
+        </div>
+
         <button className="next-btn" onClick={nextImage}>
           &#10095;
         </button>
@@ -87,6 +101,9 @@ export default function Task() {
           </div>
         </div>
         <div className="inner2-2">
+          <div className="thunder-icon">
+            <img src={thunderboult} alt="" />
+          </div>
           <h3>Trending Car!</h3>
           <p>High chances of sale in next 6 days</p>
         </div>
