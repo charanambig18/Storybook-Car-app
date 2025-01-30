@@ -8,7 +8,7 @@
     margin-top: 10px;
     flex-direction: column;
     padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.894);
+    border: 0.5px solid rgba(0, 0, 0, 0.894);
     box-shadow: 0 9px 16px rgba(0, 0, 0, 0.177);
 }
 .bottom-right-container .sub-heading{
@@ -33,6 +33,7 @@
 .side-info .price-heading a{
     color:  rgb(255, 89, 0);
     font-weight: bold;
+    text-decoration: none;
 
 }
 .coloum-contants{
@@ -64,7 +65,7 @@
 }
 .payment-heading{
     padding: 0PX 0px 20px 0px;
-    color: rgba(0, 0, 0, 0.615);
+    color: rgba(0, 0, 0, 0.786);
     font-weight: bold;
 }
 .sub-total{
@@ -74,9 +75,12 @@
 .payment-name{
     padding: 0PX 0px 15px 0px;
     font-size: 14.5px;
+    color: rgba(49, 48, 48, 0.922);
 }
 .payment-price{
     padding: 0PX 0px 15px 0px;
+    color: rgba(49, 48, 48, 0.922);
+
 
 }
 .payment-sub-heading{
@@ -95,6 +99,7 @@ color: rgba(0, 0, 0, 0.804);
 }
 .payment-method{
     padding-bottom: 15px;
+    color: rgba(49, 48, 48, 0.922);
 
 }
 .payment-Images{
