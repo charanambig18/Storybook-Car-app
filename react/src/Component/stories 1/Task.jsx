@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Task.css";
-import heart from "./images/heart.jpg";
+import heart from "./images/heart.png";
 import orange from "./images/Like-orange.png";
 import location from "./images/location.png";
 import whatsapp from "./images/whatsapp.png";
