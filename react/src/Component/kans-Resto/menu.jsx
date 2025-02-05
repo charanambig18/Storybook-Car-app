@@ -44,7 +44,7 @@ const menu = () => {
           <div className="food-order">
             <div className="food-price">
               <p>Price per portion</p>
-              <h2> Rp 70.000,00</h2>
+              <h2> Rp 60.000,00</h2>
             </div>
             <div className="order">
               <button>Order</button>
