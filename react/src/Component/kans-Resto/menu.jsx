@@ -40,7 +40,7 @@ const menu = () => {
       <div className="menu-grid">
         <div className="menu-item">
           <img src={biscuit} alt="Biscuit Mama with Susu" />
-          <h2>Biscuit Mama with Susu</h2>
+          <h2>Biscuit Mama with </h2>
           <div className="food-order">
             <div className="food-price">
               <p>Price per portion</p>
