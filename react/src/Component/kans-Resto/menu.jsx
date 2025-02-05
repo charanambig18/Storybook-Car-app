@@ -32,7 +32,7 @@ const menu = () => {
             <div className="image">
               <img src={filter} alt="" />
             </div>
-            <button className="filter">Filter</button>
+            <button className="filter">Filters</button>
           </div>
         </div>
       </div>
