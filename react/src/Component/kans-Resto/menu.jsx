@@ -17,7 +17,7 @@ const menu = () => {
     <div className="container">
       <div className="navbar">
         <div className="food-heading">
-          <h1>Explore Our Best Menu</h1>
+          <h1>Explore Our </h1>
           <p>View All</p>
         </div>
         <div className="categories">
