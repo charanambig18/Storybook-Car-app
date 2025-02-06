@@ -27,7 +27,7 @@ const menu = () => {
           <button>Dessert</button>
           <button>Side Dishes</button>
           <button>Beverages</button>
-          <button>Kid</button>
+          <button>Kids</button>
           <div className="filter-image">
             <div className="image">
               <img src={filter} alt="" />
