@@ -43,7 +43,7 @@ const menu = () => {
           <h2>Biscuit Mama with Susu</h2>
           <div className="food-order">
             <div className="food-price">
-              <p>Price </p>
+              <p>Price per portion</p>
               <h2> Rp 60.000,00</h2>
             </div>
             <div className="order">
