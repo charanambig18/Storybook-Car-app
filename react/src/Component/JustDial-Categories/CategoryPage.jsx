@@ -1,72 +1,74 @@
-import React from 'react'
-import "./CategoryPage.css"
+import React from "react";
+import "./CategoryPage.css";
 
-// const categories = [
-//     { name: "Restaurants", img: "/images/restaurant.png" },
-//     { name: "Hotels", img: "/images/hotel.png" },
-//     { name: "Beauty Spa", img: "/images/beauty-spa.png" },
-//     { name: "Home Decor", img: "/images/home-decor.png" },
-//     { name: "Wedding Planning", img: "/images/wedding.png" },
-//     { name: "Education", img: "/images/education.png" },
-//     { name: "Rent & Hire", img: "/images/rent-hire.png" },
-//     { name: "Hospitals", img: "/images/hospital.png" },
-//     { name: "Contractors", img: "/images/contractors.png" },
-//     { name: "Pet Shops", img: "/images/pet-shop.png" },
-//     { name: "PG/Hostels", img: "/images/pg-hostel.png" },
-//     { name: "Estate Agent", img: "/images/estate-agent.png" },
-//     { name: "Dentists", img: "/images/dentist.png" },
-//     { name: "Gym", img: "/images/gym.png" },
-//     { name: "Loans", img: "/images/loans.png" },
-//     { name: "Event Organisers", img: "/images/event.png" },
-//     { name: "Driving Schools", img: "/images/driving-school.png" },
-//     { name: "Packers & Movers", img: "/images/packers-movers.png" },
-//     { name: "Courier Service", img: "/images/courier.png" },
-//     { name: "Popular Categories", img: "/images/popular.png", special: true },
-//   ];
-  
-//   const CategoryPage = () => {
-//     return (
-//       <div className="category-container">
-//         {categories.map((category, index) => (
-//           <div
-//             key={index}
-//             className={`category ${category.special ? "special-category" : ""}`}
-//           >
-//             <img src={category.img} alt={category.name} className="category-img" />
-//             <p>{category.name}</p>
-//           </div>
-//         ))}
-//       </div>
-//     );
-//   };
+import beautySpa from "./images/beauty-spa.png";
+import contractors from "./images/contractors.png";
+import courierService from "./images/courier-service.png";
+import dentists from "./images/dentists.png";
+import drivingSchools from "./images/driving-schools.png";
+import education from "./images/education.png";
+import estateAgent from "./images/estate-agent.png";
+import eventOrganisers from "./images/event-oranisers.png";
+import gym from "./images/gym.png";
+import homeDecor from "./images/home-decor.png";
+import hospitals from "./images/hospitals.png";
+import hotels from "./images/hotels.png";
+import loans from "./images/loans.png";
+import packersMovers from "./images/packers-moves.png";
+import petShops from "./images/pet-shops.png";
+import pgHostels from "./images/pg-hostels.png";
+import pop from "./images/pop.png";
+import rentHire from "./images/rent-hire.png";
+import restaurants from "./images/restaurants.png";
+import weddingPlanning from "./images/wedding-planning.png";
 
-return (
+const categories = [
+  { name: "Restaurants", image: restaurants },
+  { name: "Hotels", image: hotels },
+  { name: "Beauty Spa", image: beautySpa },
+  { name: "Home Decor", image: homeDecor },
+  { name: "Wedding Planning", image: weddingPlanning },
+  { name: "Education", image: education },
+  { name: "Rent & Hire", image: rentHire },
+  { name: "Hospitals", image: hospitals },
+  { name: "Contractors", image: contractors },
+  { name: "Pet Shops", image: petShops },
+  { name: "PG/Hostels", image: pgHostels },
+  { name: "Estate Agent", image: estateAgent },
+  { name: "Dentists", image: dentists },
+  { name: "Gym", image: gym },
+  { name: "Loans", image: loans },
+  { name: "Event Organisers", image: eventOrganisers },
+  { name: "Driving Schools", image: drivingSchools },
+  { name: "Packers & Movers", image: packersMovers },
+  { name: "Courier Service", image: courierService },
+  { name: "Popular Categories", image: pop },
+];
+
+const CategoryPage = () => {
+  return (
     <div>
-      <h1>Categories</h1>
       <div className="category-container">
-        <div className="category"><img src="/images/restaurant.png" alt="Restaurants"/><p>Restaurants</p></div>
-        <div className="category"><img src="/images/hotel.png" alt="Hotels"/><p>Hotels</p></div>
-        <div className="category"><img src="/images/beauty-spa.png" alt="Beauty Spa"/><p>Beauty Spa</p></div>
-        <div className="category"><img src="/images/home-decor.png" alt="Home Decor"/><p>Home Decor</p></div>
-        <div className="category"><img src="/images/wedding.png" alt="Wedding Planning"/><p>Wedding Planning</p></div>
-        <div className="category"><img src="/images/education.png" alt="Education"/><p>Education</p></div>
-        <div className="category"><img src="/images/rent-hire.png" alt="Rent & Hire"/><p>Rent & Hire</p></div>
-        <div className="category"><img src="/images/hospital.png" alt="Hospitals"/><p>Hospitals</p></div>
-        <div className="category"><img src="/images/contractors.png" alt="Contractors"/><p>Contractors</p></div>
-        <div className="category"><img src="/images/pet-shop.png" alt="Pet Shops"/><p>Pet Shops</p></div>
-        <div className="category"><img src="/images/pg-hostel.png" alt="PG/Hostels"/><p>PG/Hostels</p></div>
-        <div className="category"><img src="/images/estate-agent.png" alt="Estate Agent"/><p>Estate Agent</p></div>
-        <div className="category"><img src="/images/dentist.png" alt="Dentists"/><p>Dentists</p></div>
-        <div className="category"><img src="/images/gym.png" alt="Gym"/><p>Gym</p></div>
-        <div className="category"><img src="/images/loans.png" alt="Loans"/><p>Loans</p></div>
-        <div className="category"><img src="/images/event.png" alt="Event Organisers"/><p>Event Organisers</p></div>
-        <div className="category"><img src="/images/driving-school.png" alt="Driving Schools"/><p>Driving Schools</p></div>
-        <div className="category"><img src="/images/packers-movers.png" alt="Packers & Movers"/><p>Packers & Movers</p></div>
-        <div className="category"><img src="/images/courier.png" alt="Courier Service"/><p>Courier Service</p></div>
-        <div className="category special-category"><img src="/images/popular.png" alt="Popular Categories"/><p>Popular Categories</p></div>
+        {categories.map((category, index) => (
+          <div
+            key={index}
+            className={`category ${
+              category.name === "Popular Categories" ? "popular-category" : ""
+            }`}
+          >
+            <img
+              src={category.image}
+              alt={category.name}
+              className={
+                category.name === "Popular Categories" ? "popular-img" : ""
+              }
+            />
+            <p>{category.name}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
+};
 
-
-export default CategoryPage
+export default CategoryPage;
