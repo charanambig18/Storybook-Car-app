@@ -1,3 +1,7 @@
+body{
+  background: #fff;
+}
+
 .category-container {
   display: flex;
   flex-wrap: wrap;
@@ -15,7 +19,7 @@
 }
 
 .category:hover {
-  transform: scale(1.05);
+  
 }
 
 .category img {
@@ -32,17 +36,13 @@
 .category p {
   font-size: 14px;
   color: #333;
-  font-weight: bold;
-}
-.category p {
-  font-size: 15px;
+  font-size: 17px;
   color: rgba(29, 28, 28, 0.862);
   font-family: sans-serif;
-
   margin: 0;
-  font-weight: bold;
   cursor: pointer;
 }
+
 .popular-img {
   border: 1px solid rgb(0, 0, 0) !important;
 }
