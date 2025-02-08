@@ -11,7 +11,6 @@
   text-align: center;
   padding: 0px 0px 20px 0px;
   border-radius: 10px;
-  background: #fff;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -27,6 +26,7 @@
   border: 1px solid rgba(128, 128, 128, 0.495);
   border-radius: 10px;
   padding: 9px;
+  background: #fff;
 }
 
 .category p {
