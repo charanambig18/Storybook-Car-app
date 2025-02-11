@@ -1,0 +1,162 @@
+/* AceCoinPay Styles */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    background: #f5f5f5;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+}
+
+.timer-box {
+    background: #000;
+    color: white;
+    padding: 0.5rem;
+    margin: 0 2px;
+    border-radius: 5px;
+}
+
+.input-group {
+    margin-top: 1.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    background: #eaeaea;
+    padding: 0.75rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.main input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 0.5rem;
+    outline: none;
+}
+
+.grp {
+    display: flex;
+    align-items: center;
+}
+
+.divider {
+    margin: 0 0.5rem;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    background: #007aff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.checkout {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.credit-card {
+    background: #1a1a1a;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.credit-card__head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-digits {
+    display: flex;
+    align-items: center;
+}
+
+.hidden-digits {
+    display: flex;
+}
+
+.hidden-digits .circle {
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.purchase-data .data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.purchase-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.t-amount {
+    display: flex;
+    align-items: baseline;
+}
+
+.t-amount h1 {
+    font-size: 2rem;
+}
+
+.t-amount sub {
+    font-size: 1rem;
+}
