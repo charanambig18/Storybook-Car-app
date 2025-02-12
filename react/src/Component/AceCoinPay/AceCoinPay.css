@@ -11,6 +11,8 @@ body {
 }
 
 .wrapper {
+  display: flex;
+
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
@@ -35,6 +37,7 @@ body {
 
 .form {
   padding-right: 3em;
+  /* flex: 2; */
 }
 
 .form-header {
@@ -98,6 +101,15 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1.8em;
+}
+.input-group__col{
+  display: flex;
+  flex-direction: row;
+}
+.dates{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-body form .input-group .header .title {

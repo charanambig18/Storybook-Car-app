@@ -16,10 +16,12 @@ import docketImg from "./images/docket.png"
 const Example = () => {
   return (
     <div className="wrapper">
+      <div className="form">
+
       <div className="close-btn">
         <img src={AceCoinlogo} alt="Close Icon" />
       </div>
-      <div className="form">
+      
         <div className="form-header">
           <div className="logo">
             <div className="logo-circle" />
@@ -68,19 +70,21 @@ const Example = () => {
               </div>
             </div>
 
-            <div className="input-group __col">
+            <div className="input-group__col">
               <div className="header">
                 <div className="description">
                   <div className="title">Expiry Date</div>
                   <div className="desc">Enter the expiration date of the card</div>
                 </div>
               </div>
+              <div className="dates">
               <div className="main __date">
                 <input type="text" placeholder="MM" />
               </div>
               <div className="divider">/</div>
               <div className="main __date">
                 <input type="text" placeholder="YY" />
+              </div>
               </div>
             </div>
 
