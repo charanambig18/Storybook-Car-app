@@ -1,162 +1,318 @@
-/* AceCoinPay Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1rem;
-    padding: 2rem;
-    background: #f5f5f5;
+html {
+  font-size: 16px;
 }
 
-.close-btn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
+body {
+  background: url("../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5em 3em;
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  margin-top: 6em;
+  box-shadow: 0px 4px 14px 2px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .close-btn {
+  position: absolute;
+  z-index: 99;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.wrapper .close-btn svg {
+  height: 1.5em;
 }
 
 .form {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding-right: 3em;
 }
 
 .form-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5em;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
+.form-header .logo {
+  display: flex;
+  align-items: center;
 }
 
-.logo h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
+.form-header .logo-circle {
+  height: 3em;
+  width: 3em;
+  background-color: #035fff;
+  border-radius: 50%;
 }
 
-.timer {
-    display: flex;
-    align-items: center;
+.form-header .logo h1 {
+  font-size: 1.75em;
+  font-weight: 600;
+  margin-left: 0.6em;
+  color: #05365c;
 }
 
-.timer-box {
-    background: #000;
-    color: white;
-    padding: 0.5rem;
-    margin: 0 2px;
-    border-radius: 5px;
+.form-header .logo h1 .lean {
+  font-weight: 300;
 }
 
-.input-group {
-    margin-top: 1.5rem;
+.form-header .timer {
+  font-size: 1.35em;
+  font-weight: 500;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.form-header .timer-box {
+  background-color: #17254c;
+  color: #fff;
+  height: 1.9em;
+  width: 1.3em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-left: -4px;
 }
 
-.main {
-    display: flex;
-    align-items: center;
-    background: #eaeaea;
-    padding: 0.75rem;
-    border-radius: 5px;
-    margin-top: 0.5rem;
+.form-header .timer-divider {
+  position: relative;
+  right: 2px;
 }
 
-.main input {
-    flex: 1;
-    border: none;
-    background: transparent;
-    padding: 0.5rem;
-    outline: none;
+.form-body form .input-group {
+  margin-bottom: 2em;
 }
 
-.grp {
-    display: flex;
-    align-items: center;
+.form-body form .input-group .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.8em;
 }
 
-.divider {
-    margin: 0 0.5rem;
+.form-body form .input-group .header .title {
+  text-transform: capitalize;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #05365c;
 }
 
-.btn-submit {
-    width: 100%;
-    padding: 1rem;
-    background: #007aff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    margin-top: 1rem;
+.form-body form .input-group .header .desc {
+  font-size: 0.77em;
+  font-weight: 500;
+  color: #8e96a3;
+}
+
+.form-body form .input-group .header button.edit {
+  display: flex;
+  align-items: center;
+  color: #1da1f2;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.form-body form .input-group .header button.edit svg {
+  height: 0.9em;
+  fill: #1da1f2;
+}
+
+.form-body form .input-group .header button.edit .btn-desc {
+  margin-left: 0.6em;
+  font-weight: 500;
+}
+
+.form-body form .input-group .main {
+  position: relative;
+  margin-top: 1em;
+}
+
+.form-body form .input-group .main img {
+  position: absolute;
+}
+
+.form-body form .input-group .main img.leading-icon {
+  left: 1.2em;
+  height: 2em;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.form-body form .input-group .main img.trailing-icon {
+  right: 1.5em;
+  height: 1.5em;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.form-body form .input-group .main input {
+  border: 2px solid rgba(224, 224, 224, 0.5);
+  width: 100%;
+  padding: 1em 4em;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 6px;
+  background: linear-gradient(45deg, #f5f8ff, transparent);
+  color: #05365c;
+}
+
+.form-body form .input-group .main input:focus {
+  outline-color: #0077b6;
+}
+
+.form-body form .btn-submit {
+  background-color: #035fff;
+  width: 100%;
+  padding: 1.2em 0;
+  margin-top: 0.75em;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: 500;
+  border-radius: 0.6em;
+  transition: all 250ms ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.form-body form .btn-submit:hover {
+  background-color: #1254d6;
 }
 
 .checkout {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 90%;
+  float: right;
 }
 
-.credit-card {
-    background: #1a1a1a;
-    color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
+.checkout .credit-card {
+  width: 16em;
+  height: 23.4em;
+ 
+  backdrop-filter: blur(15px);
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0px 4px 14px 2px rgba(224, 224, 224, 0.6);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
 }
 
-.credit-card__head {
-    display: flex;
-    justify-content: space-between;
+.checkout .credit-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8em;
 }
 
-.card-digits {
-    display: flex;
-    align-items: center;
+.checkout .credit-card__body {
+  color: #05365c;
 }
 
-.hidden-digits {
-    display: flex;
+.checkout .credit-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 1.4em;
 }
 
-.hidden-digits .circle {
-    width: 8px;
-    height: 8px;
-    background: white;
-    border-radius: 50%;
-    margin-right: 4px;
+.checkout .credit-card__footer .expiry {
+  font-size: 1em;
+  font-weight: 600;
 }
 
-.purchase-data .data {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
+.checkout .checkout-details {
+  background-color: #f0f3f8;
+  height: 82%;
+  width: 100%;
+  border-radius: 1em;
+  position: absolute;
+  bottom: 0;
 }
 
-.purchase-total {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.5rem;
+.checkout .checkout-details .purchase-data {
+  top: 15.5em;
+  padding: 2em;
 }
 
-.t-amount {
-    display: flex;
-    align-items: baseline;
+.checkout .checkout-details .purchase-total {
+  position: absolute;
+  bottom: 1.4em;
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.t-amount h1 {
-    font-size: 2rem;
+.checkout .checkout-details .purchase-total .total .desc {
+  color: #8e96a3;
+  font-size: 0.9em;
+  font-weight: 500;
 }
 
-.t-amount sub {
-    font-size: 1rem;
+.checkout .checkout-details .purchase-total .total .t-amount {
+  color: #05365c;
+  font-size: 2em;
+  font-weight: 700;
 }
+
+.form-body form .input-group .header button.edit img {
+    height: 0.9em; /* Adjust size as needed */
+  }
+
+  .form-body form .input-group .main img.leading-icon,
+  .form-body form .input-group .main img.trailing-icon {
+    height: 2em; /* Adjust based on the size of your PNG */
+    top: 50%; 
+    transform: translate(0, -50%); /* Ensures vertical centering */
+  }
+
+
+.close-btn img{
+    width: 20px;
+    height: 20px;
+
+}
+.edit img{
+    width: 20px;
+    height: 20px;
+
+}
+.main img{
+    width: 20px;
+    height: 20px;
+
+}
+.credit-card__head img{
+    width: 20px;
+    height: 20px;
+
+}
+.credit-card__footer img{
+    width: 20px;
+    height: 20px;
+
+}
+.value img{
+    width: 20px;
+    height: 20px;
+
+}
+.purchase-total img{
+    width: 20px;
+    height: 20px;
+
+}
+    
