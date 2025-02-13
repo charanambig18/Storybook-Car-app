@@ -130,18 +130,20 @@ const Example = () => {
           <div className="credit-card__head">
             <img src={chipImg} alt="Card Logo" />
             <div className="wifi">
-            <img src={wifiImg} alt="Card Chip" className="chip" />
+              <img src={wifiImg} alt="Card Chip" className="chip" />
             </div>
           </div>
           <div className="credit-card__body">
             <span className="holder">Jonathan Michael</span>
             <div className="card-digits">
-              <div className="hidden-digits">
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
+
+              <div className="dots">
+                <span className="dot"></span>
+                <span className="dot"></span>
+                <span className="dot"></span>
+                <span className="dot"></span>
               </div>
+
               <span className="visible-digits">
                 <h1>3456</h1>
               </span>

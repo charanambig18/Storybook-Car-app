@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #f5f7fa;
   display: flex;
   justify-content: center;
@@ -13,9 +13,10 @@ body {
   gap: 20px;
   padding: 20px;
   background-color: #ffffff;
-  border-radius: 16px;
+  border-radius: 10px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   width: 900px;
+  border: 1px solid black;
 }
 
 .form {
@@ -37,9 +38,12 @@ body {
 }
 
 .close-btn img {
-  height: 24px;
-  width: 24px;
+  padding: 5px;
+  height: 34px;
+  width: 34px;
   margin-right: 10px;
+  border-radius: 100px;
+  background-color: #0059b8;
 }
 
 .logo-circle h1 {
@@ -57,15 +61,17 @@ body {
 }
 
 .timer-box {
-  padding: 8px 12px;
-  background-color: #e0e0e0;
+  padding: 8px 11px;
+  background-color: #131313;
   border-radius: 4px;
   font-weight: bold;
+  margin-right: 1px;
+  color: white;
 }
 
 .timer-divider {
-  padding: 0 5px;
-  font-size: 18px;
+  font-size: 20px;
+  margin-right: 1px;
 }
 
 .form-body {
@@ -89,9 +95,22 @@ body {
   margin-bottom: 8px;
 }
 
-.title {
+.description .title {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.purchase-data .title {
+  color: rgb(68, 68, 68);
   font-size: 14px;
   font-weight: bold;
+}
+
+.inner-text {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .desc {
@@ -108,7 +127,7 @@ body {
   border-radius: 8px;
   border: 1px solid #e0e0e0;
 }
-.main .master-Badge{
+.main .master-Badge {
   display: flex;
   align-items: center;
 }
@@ -132,7 +151,6 @@ img.trailing-icon {
   width: 24px;
   margin-left: 8px;
 }
-
 
 .input-group__col .dates {
   display: flex;
@@ -191,40 +209,14 @@ img.trailing-icon {
   background-color: #0056b3;
 }
 
-
-/* .main__date {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.divider {
-  margin: 0 5px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.btn-submit {
-  width: 100%;
-  padding: 12px;
-  background-color: #007bff;
-  color: #ffffff;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-} */
-
 .checkout {
+  background-color: rgba(128, 128, 128, 0.452);
   width: 40%;
   padding: 20px;
 }
 
 .credit-card {
-  background-color: grey;
-  /* background-color: blue; */
+  background-color: white;
   color: rgb(0, 0, 0);
   border-radius: 16px;
   padding: 20px;
@@ -269,7 +261,7 @@ img.trailing-icon {
 }
 
 .visible-digits h1 {
-  margin: 0;
+  margin-left: 14px;
   font-size: 24px;
 }
 
@@ -283,16 +275,6 @@ img.trailing-icon {
   font-size: 15px;
 }
 
-/* .card__design {
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
-  background-color: #0056b3;
-  width: 40%;
-  height: 40%;
-  border-radius: 16px;
-} */
-
 .checkout-details {
   margin-top: 20px;
 }
@@ -303,7 +285,7 @@ img.trailing-icon {
   margin-bottom: 12px;
 }
 
-.value{
+.value {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,38 +318,68 @@ img.trailing-icon {
   margin: 20px 0;
 }
 
-
-.editPencil .edit img{
+.editPencil .edit img {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+.edit {
+  border: none;
+  background: none;
+}
+.edit .btn-desc {
+  color: rgb(0, 149, 255);
+  font-weight: bold;
+  font-size: 13px;
+}
+.main img {
   width: 20px;
   height: 20px;
 }
-.main img{
-  width: 20px;
-  height: 20px;
-  
-}
-.credit-card__head img{
+.credit-card__head img {
   width: 30px;
   height: 40px;
-
 }
-.credit-card__head .wifi img{
+.credit-card__head .wifi img {
   width: 25px;
   height: 22px;
-
 }
-.credit-card__footer img{
+.credit-card__footer img {
   width: 55px;
   height: 55px;
-  
 }
-.value img{
+.value img {
   width: 22px;
   height: 22px;
   margin-right: 10px;
-
 }
-.purchase-total img{
-  width: 25px;
-  height: 25px;
+.purchase-total img {
+  width: 22px;
+  height: 22px;
+}
+.t-amount {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.t-amount .amount {
+  margin-bottom: 2px;
+  font-size: 13px;
+  margin-left: 3px;
+  color: rgb(68, 68, 68);
+}
+.total .desc {
+  color: rgb(68, 68, 68);
+  font-size: 14px;
+}
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 6.5px;
+  height: 6px;
+  background-color: #000000;
+  border-radius: 50%;
 }
