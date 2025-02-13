@@ -1,33 +1,31 @@
-import React from 'react';
-import './AceCoinPay.css';
+import React from "react";
+import "./AceCoinPay.css";
 
-import AceCoinlogo from "./images/Acecoin-logo.png"
-import pencil from "./images/pencil.png"
-import mcSymbol from "./images/masterCard-Logo.png"
-import verifiedBadge from "./images/verified.png"
-// import dotsImg from "./images/dots-menu.png"
+import AceCoinlogo from "./images/Acecoin-logo.png";
+import pencil from "./images/pencil.png";
+import mcSymbol from "./images/masterCard-Logo.png";
+import verifiedBadge from "./images/verified.png";
+import dotsImg from "./images/dots-menu.png";
 import chipImg from "./images/chip.png";
 import wifiImg from "./images/wifi.png";
-import mastercardLogo from "./images/mastercard.png"
-import appleLogo from "./images/apple.png"
-import docketImg from "./images/docket.png"
-
+import mastercardLogo from "./images/mastercard.png";
+import appleLogo from "./images/apple.png";
+import docketImg from "./images/docket.png";
 
 const Example = () => {
   return (
     <div className="wrapper">
       <div className="form">
-
-      <div className="close-btn">
-        <img src={AceCoinlogo} alt="Close Icon" />
-      </div>
-      
         <div className="form-header">
           <div className="logo">
-            <div className="logo-circle" />
-            <h1>
-              Ace<span className="lean">Coin</span>
-            </h1>
+            <div className="close-btn">
+              <img src={AceCoinlogo} alt="Close Icon" />
+            </div>
+            <div className="logo-circle">
+              <h1>
+                AceCoin<span className="lean">Pay</span>
+              </h1>
+            </div>
           </div>
           <div className="timer">
             <span className="timer-box">0</span>
@@ -44,17 +42,31 @@ const Example = () => {
               <div className="header">
                 <div className="description">
                   <div className="title">Card Number</div>
-                  <div className="desc">Enter the 16-digit card number on the card</div>
+                  <div className="desc">
+                    Enter the 16-digit card number on the card
+                  </div>
                 </div>
-                <button className="edit">
-                  <img src={pencil} alt="Edit Icon" />
-                  <span className="btn-desc">Edit</span>
-                </button>
+                <div className="editPencil">
+                  <button className="edit">
+                    <img src={pencil} alt="Edit Icon" />
+                    <span className="btn-desc">Edit</span>
+                  </button>
+                </div>
               </div>
               <div className="main">
-                <img src={mcSymbol} alt="Card Leading Icon" className="leading-icon" />
-                <input type="text" placeholder="2414-7512-4312-3456" />
-                <img src={verifiedBadge} alt="Card Trailing Icon" className="trailing-icon" />
+                <div className="master-Badge">
+                  <img
+                    src={mcSymbol}
+                    alt="Card Leading Icon"
+                    className="leading-icon"
+                  />
+                  <input type="text" placeholder="2414-7512-4312-3456" />
+                </div>
+                <img
+                  src={verifiedBadge}
+                  alt="Card Trailing Icon"
+                  className="trailing-icon"
+                />
               </div>
             </div>
 
@@ -62,11 +74,14 @@ const Example = () => {
               <div className="header">
                 <div className="description">
                   <div className="title">CVV Number</div>
-                  <div className="desc">Enter the 3 or 4 digit number on the card</div>
+                  <div className="desc">
+                    Enter the 3 or 4 digit number on the card
+                  </div>
                 </div>
               </div>
               <div className="main">
-                <input type="password" placeholder="327" />
+                <input type="number" placeholder="327" />
+                <img src={dotsImg} alt="" />
               </div>
             </div>
 
@@ -74,17 +89,19 @@ const Example = () => {
               <div className="header">
                 <div className="description">
                   <div className="title">Expiry Date</div>
-                  <div className="desc">Enter the expiration date of the card</div>
+                  <div className="desc">
+                    Enter the expiration date of the card
+                  </div>
                 </div>
               </div>
               <div className="dates">
-              <div className="main __date">
-                <input type="text" placeholder="MM" />
-              </div>
-              <div className="divider">/</div>
-              <div className="main __date">
-                <input type="text" placeholder="YY" />
-              </div>
+                <div className="main__date">
+                  <input type="number" placeholder="09" />
+                </div>
+                <div className="divider">/</div>
+                <div className="main__date">
+                  <input type="number" placeholder="22" />
+                </div>
               </div>
             </div>
 
@@ -97,10 +114,13 @@ const Example = () => {
               </div>
               <div className="main">
                 <input type="password" placeholder="Password" />
+                <img src={dotsImg} alt="" />
               </div>
             </div>
 
-            <button type="submit" className="btn-submit">Pay Now</button>
+            <button type="submit" className="btn-submit">
+              Pay Now
+            </button>
           </form>
         </div>
       </div>
@@ -112,7 +132,7 @@ const Example = () => {
             <img src={wifiImg} alt="Card Chip" className="chip" />
           </div>
           <div className="credit-card__body">
-            <span className="holder">Card Holder</span>
+            <span className="holder">Jonathan Michael</span>
             <div className="card-digits">
               <div className="hidden-digits">
                 <span className="circle" />
@@ -120,16 +140,18 @@ const Example = () => {
                 <span className="circle" />
                 <span className="circle" />
               </div>
-              <span className="visible-digits">1234</span>
+              <span className="visible-digits">
+                <h1>3456</h1>
+              </span>
             </div>
             <div className="credit-card__footer">
-              <span className="expiry">09/24</span>
+              <span className="expiry">09/22</span>
               <img src={mastercardLogo} alt="Visa Logo" className="logo" />
             </div>
           </div>
-          <div className="card__design">
+          {/* <div className="card__design">
             <div className="inner" />
-          </div>
+          </div> */}
         </div>
 
         <div className="checkout-details">
@@ -143,14 +165,14 @@ const Example = () => {
             </div>
             <div className="data">
               <span className="title">Order Number</span>
-              <span className="inner-text">123456</span>
+              <span className="inner-text">1266201</span>
             </div>
             <div className="data">
               <span className="title">Product</span>
               <span className="inner-text">MacBook Air</span>
             </div>
             <div className="data">
-              <span className="title">VAT</span>
+              <span className="title">VAT(20%)</span>
               <span className="inner-text">$100.00</span>
             </div>
           </div>
@@ -160,10 +182,10 @@ const Example = () => {
           </div>
           <div className="purchase-total">
             <div className="total">
-              <span className="desc">Total</span>
+              <span className="desc">You have to pay</span>
               <div className="t-amount">
-                <span className="amount">$1200</span>
-                <sub>USD</sub>
+                <h1>549.99</h1>
+                <span className="amount">USD</span>
               </div>
             </div>
             <img src={docketImg} alt="Card Logo" />
