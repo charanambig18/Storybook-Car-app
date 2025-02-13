@@ -129,7 +129,9 @@ const Example = () => {
         <div className="credit-card">
           <div className="credit-card__head">
             <img src={chipImg} alt="Card Logo" />
+            <div className="wifi">
             <img src={wifiImg} alt="Card Chip" className="chip" />
+            </div>
           </div>
           <div className="credit-card__body">
             <span className="holder">Jonathan Michael</span>
