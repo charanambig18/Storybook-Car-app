@@ -1,7 +1,7 @@
 import AceCoinPay from "./AceCoinPay";
 
 export default {
-  title: "Componant/AceCoinPay",
+  title: "Component/AceCoinPay",
   component: AceCoinPay,
 };
 

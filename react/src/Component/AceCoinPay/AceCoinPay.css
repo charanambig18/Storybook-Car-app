@@ -93,6 +93,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8px;
+  
 }
 
 .description .title {
@@ -277,6 +278,7 @@ img.trailing-icon {
 
 .checkout-details {
   margin-top: 20px;
+  /* height: 400px; */
 }
 
 .purchase-data .data {
@@ -383,3 +385,4 @@ img.trailing-icon {
   background-color: #000000;
   border-radius: 50%;
 }
+
