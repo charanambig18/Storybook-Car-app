@@ -1,5 +1,5 @@
 body {
-
+  font-family: "Arial", sans-serif;
   background-color: #f5f7fa;
   display: flex;
   justify-content: center;
@@ -211,7 +211,7 @@ img.trailing-icon {
 }
 
 .checkout {
-  background-color: rgba(128, 128, 128, 0.452);
+  background-color: rgba(128, 128, 128, 0.136);
   width: 40%;
   padding: 20px;
 }
