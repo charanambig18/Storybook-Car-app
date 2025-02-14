@@ -45,8 +45,8 @@ h2 {
 
 .summary-order p,
 .payment-details p {
-  /* font-size: 14px;
-  color: #6c757d; */
+  font-size: 14px;
+  color: #6c757d;
 }
 
 .order-item .item {
