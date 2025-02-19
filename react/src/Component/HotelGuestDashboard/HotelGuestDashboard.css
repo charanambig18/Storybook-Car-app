@@ -1,0 +1,137 @@
+/* General Container Styling */
+.dashboard-container {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4f4;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Styling */
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 10px;
+  }
+  .profile-info .guest-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .profile-info .guest-status {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+  .notification-icon {
+    font-size: 24px;
+    color: #666;
+  }
+  
+  /* Recommendation Section */
+  .recommendation-section {
+   
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .recommendation-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .recommendation-desc {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .recommendation-note {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  .recommendation-price {
+    font-size: 14px;
+    color: #ff6600;
+    font-weight: bold;
+  }
+  
+  /* Popular Experiences */
+  .popular-experiences {
+    margin-bottom: 20px;
+  }
+  .experience-carousel {
+    display: flex;
+    gap: 10px;
+  }
+  .experience-card {
+    flex: 1;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Services Section */
+  .services-list {
+    list-style: none;
+    padding: 0;
+  }
+  .service-item {
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Section */
+  .dashboard-footer {
+    background-color: #d9f1f1;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .footer-points {
+    margin-bottom: 15px;
+  }
+  .points-amount {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .points-description {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-icon {
+    font-size: 24px;
+    color: #666;
+  }
+  .home-icon::before { content: "🏠"; }
+  .search-icon::before { content: "🔍"; }
+  .calendar-icon::before { content: "📅"; }
+  .settings-icon::before { content: "⚙️"; }
+  
